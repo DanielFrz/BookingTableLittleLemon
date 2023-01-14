@@ -1,0 +1,117 @@
+.Hero {
+    background-color: #495E57;
+    width: 100%;
+    height: 400px; /* increased the size of the background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.Hero-container {
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  }
+
+
+  .Hero-content {
+    width: 90%;
+    max-width: 1200px; 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+  }
+  
+  .Hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Hero-img {
+    width: 250px;
+height: 200px;
+  }
+
+  .Hero-h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 0px;
+    font-family: 'Markazi Text';
+}
+
+.Hero-h3 {
+    font-size: 1.6em;
+    margin-bottom: 20px; 
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: 'Markazi Text';
+    width: 55%;
+}
+
+
+
+
+
+
+  .Hero-btn {
+    background-color: #F4CE14;
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.8em;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 50%;
+    
+  }
+/* make the container and content narrower on smaller screens */
+@media (max-width: 1024px) {
+    .Hero-container, .Hero-content {
+      width: 90%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .Hero-text {
+      width: 100%;
+    }
+    .Hero-img {
+      width: 50%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+  
+  /* make the text and button smaller on smaller screens */
+  @media (max-width: 600px) {
+    .Hero-h1 {
+      font-size: 2em;
+    }
+    .Hero-h3 {
+      font-size: 1.4em;
+    }
+     .Hero-btn {
+      font-size: 0.7em;
+      padding: 10px;
+    }
+  }
+  
+  /* stack the text and image on top of each other on smaller screens */
+  @media (max-width: 480px) {
+    .Hero-content {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .Hero-img {
+      width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  }
+  
